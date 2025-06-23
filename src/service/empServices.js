@@ -12,6 +12,17 @@ let empServices={
                console.log(error);
                return error
           }   
+     },
+     loginUser:async (payload) => {
+          try {
+               // let data=await axios.post("http://localhost:5000/api/user/register",payload)
+               let data=await axiosInstance.post('/login',payload)
+               console.log(data);
+               return data
+          } catch (error) {
+               console.log(error);
+               return error
+          }   
      }
 }
 

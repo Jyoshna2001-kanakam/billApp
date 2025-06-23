@@ -48,7 +48,7 @@ const Register = () => {
   if(!repeatPassword){
     toast.error('Password and confirm password did not match')
     return
-  }
+  };
   // console.log(formData); 
  
   // empServices.regiUser(formData)
@@ -58,7 +58,7 @@ const Register = () => {
     try {
       if(data.status==201){
         toast.success("Registered successfully")
-        navigate('/login')
+        navigate('/')
       }
       else{
         toast.error("Something went wrong")
