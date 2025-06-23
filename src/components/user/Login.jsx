@@ -12,6 +12,7 @@ const Register = () => {
  const handleChange=(e)=>{
   let {name,value}=e.target
   setFormData((preval)=>({...preval,[name]:value}))
+  console.log(name,value);
  }
 
  const handleSubmit=(e)=>{
